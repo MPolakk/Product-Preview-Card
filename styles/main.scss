@@ -1,0 +1,17 @@
+@import 'reset';
+   .product {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 10px;
+
+   .product__img {
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+
+
+   }
+   .product__desc {
+      margin: 20px;
+
+   }
+}
