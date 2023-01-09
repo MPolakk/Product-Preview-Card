@@ -1,8 +1,14 @@
 @import 'reset';
+
+// font-family: 'Fraunces', sans-serif;
+// font-family: 'Montserrat', sans-serif;
    .product {
       display: flex;
       flex-direction: column;
       margin: 20px 10px;
+      color: hsl(228, 12%, 48%);
+      background-color: hsl(0, 0%, 100%);
+      
 
    .product__img {
       width: 100%;
@@ -11,7 +17,57 @@
 
    }
    .product__desc {
-      margin: 20px;
+      margin: 20px 20px 0 20px;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      label {
+         
+         text-transform: uppercase;
+         letter-spacing: 3px;
 
+      }
+      h1 {
+         color: hsl(212, 21%, 14%);
+         margin: 10px 0;
+         font-family: 'Fraunces', sans-serif;
+      }
+      
+   }
+
+   .product__price {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 0 20px 20px 20px;
+
+      .price__current {
+         color: hsl(158, 36%, 37%);
+         font-family: 'Fraunces', sans-serif;
+      }
+
+      .price__prev {
+         margin: 20px;
+         text-decoration-line: line-through;
+      }
+
+      .price__button {
+         display: flex;
+         justify-content: center;
+         width: 100%;
+         padding: 15px;
+         border-radius: 10px;
+         border: none;
+         color: hsl(0, 0%, 100%);
+         background-color: hsl(158, 36%, 37%);
+         font-weight: bold;
+         font-size: 15px;
+      img {
+         margin-right: 10px;
+      }
+       &:hover {
+         background-color: hsl(158, 36%, 15%,)
+       }
+      }
    }
 }
